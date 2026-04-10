@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1170px;
+  --font-inter: "Inter", sans-serif;
+}
+
+@utility container{
+    margin-inline: auto;
+}
+
+@utility btn {
+    @apply py-5 px-15 bg-white text-black text-lg font-bold leading-7 rounded-full
+}
