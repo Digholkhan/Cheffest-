@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+h2{
+    @apply text-[50px] font-bold leading-15 text-center
+}
 @theme {
   --breakpoint-*: initial;
   --breakpoint-sm: 576px;
@@ -16,4 +18,25 @@
 
 @utility btn {
     @apply py-5 px-15 bg-white text-black text-lg font-bold leading-7 rounded-full
+}
+
+.pulse{
+    animation: animate-pulse 3s linear infinite;
+    cursor: pointer
+}
+
+@keyframes animate-pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7),  0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    40%{
+        box-shadow: 0 0 0 50px rgba(255,109,74,0.0),  0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    80%{
+        box-shadow: 0 0 0 50px rgba(255,109,74,0.0),  0 0 0 30px rgba(255,109,74,0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(255,109,74,0.0),  0 0 0 30px rgba(255,109,74,0);
+    }
+    
 }
