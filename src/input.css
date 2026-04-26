@@ -10,6 +10,7 @@ h2{
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1170px;
   --font-inter: "Inter", sans-serif;
+    --shadow-btn: 0 4px 14px rgba(255, 255, 255, 0.15); 
 }
 
 @utility container{
@@ -17,12 +18,16 @@ h2{
 }
 
 @utility btn {
-    @apply py-5 px-15 bg-white text-black text-lg font-bold leading-7 rounded-full
+    @apply py-5 px-15 bg-white text-black text-lg font-bold leading-7 rounded-full shadow-btn
 }
 
 .pulse{
     animation: animate-pulse 3s linear infinite;
     cursor: pointer
+}
+
+footer li {
+    @apply text-lg leading-12
 }
 
 @keyframes animate-pulse{
