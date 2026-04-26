@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body class="font-inter bg-[#0D0D0D] text-white">
     <!-- navbar part  -->
-    <nav class="bg-black py-3.5">
-        <div class="container">
-            <div class="flex justify-between items-center">
-                <div>
+    <nav class="lg:bg-black py-3.5 absolute w-full lg:static top-0 left-0">
+        <div class="container ">
+            <div class="flex justify-center lg:justify-between items-center">
+                <div class="mt-22.5 lg:mt-0 w-14.75 h-14 lg:w-fit lg:h-full ">
                     <img src="./src/Assets/Logo.png" alt="">
                 </div>
-                <ul class="text-white flex gap-10.5 text-lg font-semibold">
+                <ul class="text-white  hidden lg:flex gap-10.5 text-lg font-semibold">
                     <li>
                         <a href="#">Welcome</a>
                     </li>
@@ -29,7 +33,7 @@
                         <a href="#">Contact</a>
                     </li>
                 </ul>
-                <div class="flex gap-7.5">
+                <div class="lg:flex gap-7.5 hidden">
                     <div>
                         <img src="./src/Assets/Cart icon.png" alt="">
                     </div>
@@ -38,65 +42,99 @@
                     </div>
                 </div>
             </div>
+            <div class="flex lg:hidden justify-between mt-3.25 ">
+                <img src="/src/Assets/Group 1.png" alt="">
+                <img src="/src/Assets/Cart icon.png" alt="">
+            </div>
         </div>
     </nav>
 
     <!-- banner part -->
-     <section class="bg-[url(/src/Assets/Background.png)] bg-cover bg-center bg-no-repeat pt-18 pb-61.5">
+    <section class="bg-[url(/src/Assets/Background.png)] bg-cover bg-center bg-no-repeat pt-18 pb-61.5">
         <div class="container">
-            <div class="">
-                <h1 class="text-[66px] w-171 font-black leading-24"><span class="block">Welcome!</span><span class="block"> We Made Delicious</span> Food for You</h1>
-                <p class="text-xl pt-5 pb-10 w-127.5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                <button class="btn">Order Online</button>
+            <div class="mt-58 lg:mt-0">
+                <h1 class="text-[29px] lg:text-[66px] lg:w-171 font-black leading-11 lg:leading-24"><span
+                        class="block">Welcome!</span><span class="block"> We Made Delicious</span> Food for You</h1>
+                <p class="text-sm  lg:text-xl pt-2.5 lg:pt-5 pb-7.5 lg:pb-10 lg:w-127.5">Lorem Ipsum is simply dummy
+                    text of the printing and typesetting industry. </p>
+                <button class="btn px-21 py-5  lg:px-15">Order Online</button>
             </div>
         </div>
-     </section>
-     <!-- Food Maker part -->
-      <section class="py-37.5">
+    </section>
+    <!-- Food Maker part -->
+    <section class="py-22.5 lg:py-37.5 ">
         <div class="container">
-            <div class="text-center w-205 mx-auto">
+            <div class="text-center w-full lg:w-205 mx-auto">
                 <h2>Why We are Best Food Maker</h2>
-                <p class="text-xl">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem scrambled it to make a type specimen book.
+                <p class="lg:text-xl text-sm">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem scrambled it to
+                    make a type specimen book.
                 </p>
             </div>
 
-            <div class="flex justify-between items-center mt-17.5">
-                <div class="w-128.25">
-                    <p class="text-lg leading-7.5">It is a long established fact that a reader will be distracted layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The normal distribution of letters, as opposed to using 'Content  Many desktop publishing packages and web page editors search for 'lorem ipsum' will uncover many web sites still in  humour and the like. <a href="#" class="font-bold">Read More</a></p>
+            <div class="lg:flex justify-between items-center mt-17.5">
+                <div class="w-full lg:w-128.25">
+                    <p class="text-lg leading-7.5">It is a long established fact that a reader will be distracted
+                        layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                        letters, as opposed to using English. Many desktop publishing packages and web page editors now
+                        use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many
+                        web sites still in their infancy. Various versions have evolved over the years, sometimes by
+                        accident, sometimes on purpose It is a long established fact that a reader will be distracted by
+                        the readable content of a page when looking at its layout. The normal distribution of letters,
+                        as opposed to using 'Content Many desktop publishing packages and web page editors search for
+                        'lorem ipsum' will uncover many web sites still in humour and the like. <a href="#"
+                            class="font-bold">Read More</a></p>
                 </div>
-                <div class="bg-[url(./Assets/Video.png)] bg-center bg-cover bg-no-repeat py-42.25 px-59.75">
-                    <div class="w-23 h-23 leading-23 rounded-full bg-white flex justify-center items-center pulse">
-                        <img src="./src/Assets/Polygon.png" alt="">
+                <div class=" relative  mt-18.5 lg:mt-0">
+                    <div class="w-full">
+                        <img src="/src/Assets/Video.png" alt="">
+                    </div>
+                    <div
+                        class="pulse h-15 w-15 lg:h-23 lg:w-23 bg-white top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-full absolute ">
+                        <i
+                            class="fa-solid fa-play text-black top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-2xl absolute"></i>
                     </div>
                 </div>
             </div>
         </div>
-      </section>
+    </section>
 
-      <!-- menu part -->
+    <!-- menu part -->
 
-      <section class="pb-37.5">
+    <section class="lg:pb-37.5 pb-22.5">
         <div class="container">
-            <h2 >Our Best & Delicious Menu</h2>
+            <h2>Our Best & Delicious Menu</h2>
             <div>
-                <ul class="flex justify-between mt-12 text-lg">
-                    <li class="border-b-4 hover:border-white  border-transparent  duration-150 ease-linear  py-2 px-5 rounded-[10px]"><a href="#">All</a></li>
-                    <li class="border-b-4 hover:border-white border-transparent duration-150 ease-linear  py-2 px-5 rounded-[10px]"><a href="#">Bread</a></li>
-                    <li class="border-b-4 hover:border-white border-transparent  duration-150 ease-linear py-2 px-5 rounded-[10px]"><a href="#">Chiffon & Rolls</a></li>
-                    <li class="border-b-4 hover:border-white border-transparent duration-150 ease-linear  py-2 px-5 rounded-[10px]"><a href="#">Tacos </a></li>
-                    <li class="border-b-4 hover:border-white border-transparent duration-150 ease-linear  py-2 px-5 rounded-[10px]"><a href="#">Cakes</a></li>
-                    <li class="border-b-4 hover:border-white border-transparent duration-150 ease-linear  py-2 px-5 rounded-[10px]"><a href="#">Cookies</a></li>
+                <ul class="flex justify-between mt-12 text-lg overflow-x-scroll lg:overflow-x-visible ">
+                    <li
+                        class="border-b-4 hover:border-white  border-transparent  duration-150 ease-linear  py-2 px-5 rounded-[10px]">
+                        <a href="#">All</a></li>
+                    <li
+                        class="border-b-4 hover:border-white border-transparent duration-150 ease-linear  py-2 px-5 rounded-[10px]">
+                        <a href="#">Bread</a></li>
+                    <li
+                        class="border-b-4 hover:border-white border-transparent  duration-150 ease-linear py-2 px-5 rounded-[10px]">
+                        <a href="#">Chiffon & Rolls</a></li>
+                    <li
+                        class="border-b-4 hover:border-white border-transparent duration-150 ease-linear  py-2 px-5 rounded-[10px]">
+                        <a href="#">Tacos </a></li>
+                    <li
+                        class="border-b-4 hover:border-white border-transparent duration-150 ease-linear  py-2 px-5 rounded-[10px]">
+                        <a href="#">Cakes</a></li>
+                    <li
+                        class="border-b-4 hover:border-white border-transparent duration-150 ease-linear  py-2 px-5 rounded-[10px]">
+                        <a href="#">Cookies</a></li>
                 </ul>
                 <div class="mt-20 flex flex-wrap justify-between gap-y-10 gap-x-7.5">
                     <div class="w-92.5 bg-[#191919] rounded-xl p-5 group">
-                        <img src="./src/Assets/burger.png" alt="" class="mx-auto group-hover:scale-125 ease-linear duration-300 hover:rotate-15">
+                        <img src="./src/Assets/burger.png" alt=""
+                            class="mx-auto group-hover:scale-125 ease-linear duration-300 hover:rotate-15">
                         <h3 class="text-2xl font-bold">Naan Burger</h3>
                         <p class="py-2.5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         <div class="flex justify-between items-center">
                             <h3 class="text-2xl font-bold">$1.85</h3>
-                            <div class="rounded-full border border-white h-10 w-10 flex justify-center items-center" >
-                             <img src="/src/Assets/Cart icon.png" alt="" class="h-5 w-5">
+                            <div class="rounded-full border border-white h-10 w-10 flex justify-center items-center">
+                                <img src="/src/Assets/Cart icon.png" alt="" class="h-5 w-5">
                             </div>
                         </div>
                     </div>
@@ -106,8 +144,8 @@
                         <p class="py-2.5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         <div class="flex justify-between items-center">
                             <h3 class="text-2xl font-bold">$1.85</h3>
-                            <div class="rounded-full border border-white h-10 w-10 flex justify-center items-center" >
-                             <img src="/src/Assets/Cart icon.png" alt="" class="h-5 w-5">
+                            <div class="rounded-full border border-white h-10 w-10 flex justify-center items-center">
+                                <img src="/src/Assets/Cart icon.png" alt="" class="h-5 w-5">
                             </div>
                         </div>
                     </div>
@@ -117,8 +155,8 @@
                         <p class="py-2.5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         <div class="flex justify-between items-center">
                             <h3 class="text-2xl font-bold">$1.85</h3>
-                            <div class="rounded-full border border-white h-10 w-10 flex justify-center items-center" >
-                             <img src="/src/Assets/Cart icon.png" alt="" class="h-5 w-5">
+                            <div class="rounded-full border border-white h-10 w-10 flex justify-center items-center">
+                                <img src="/src/Assets/Cart icon.png" alt="" class="h-5 w-5">
                             </div>
                         </div>
                     </div>
@@ -128,8 +166,8 @@
                         <p class="py-2.5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         <div class="flex justify-between items-center">
                             <h3 class="text-2xl font-bold">$1.85</h3>
-                            <div class="rounded-full border border-white h-10 w-10 flex justify-center items-center" >
-                             <img src="/src/Assets/Cart icon.png" alt="" class="h-5 w-5">
+                            <div class="rounded-full border border-white h-10 w-10 flex justify-center items-center">
+                                <img src="/src/Assets/Cart icon.png" alt="" class="h-5 w-5">
                             </div>
                         </div>
                     </div>
@@ -139,8 +177,8 @@
                         <p class="py-2.5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         <div class="flex justify-between items-center">
                             <h3 class="text-2xl font-bold">$1.85</h3>
-                            <div class="rounded-full border border-white h-10 w-10 flex justify-center items-center" >
-                             <img src="/src/Assets/Cart icon.png" alt="" class="h-5 w-5">
+                            <div class="rounded-full border border-white h-10 w-10 flex justify-center items-center">
+                                <img src="/src/Assets/Cart icon.png" alt="" class="h-5 w-5">
                             </div>
                         </div>
                     </div>
@@ -150,29 +188,29 @@
                         <p class="py-2.5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         <div class="flex justify-between items-center">
                             <h3 class="text-2xl font-bold">$1.85</h3>
-                            <div class="rounded-full border border-white h-10 w-10 flex justify-center items-center" >
-                             <img src="/src/Assets/Cart icon.png" alt="" class="h-5 w-5">
+                            <div class="rounded-full border border-white h-10 w-10 flex justify-center items-center">
+                                <img src="/src/Assets/Cart icon.png" alt="" class="h-5 w-5">
                             </div>
                         </div>
                     </div>
                 </div>
-               
+
                 <button class="btn mt-20 block mx-auto">See All</button>
-                
+
             </div>
         </div>
-      </section>
+    </section>
 
-      <!-- counter part -->
+    <!-- counter part -->
 
-      <section>
+    <section>
         <div class="container">
             <h2>We believe in making quality food</h2>
 
-            <div class="flex justify-between mt-15">
+            <div class="lg:flex justify-between mt-15 text-center lg:text-justify">
                 <div>
                     <h2 class="text-[56px]">2M+</h2>
-                    <p  class="text-lg">Happy Customers</p>
+                    <p class="text-lg">Happy Customers</p>
                 </div>
                 <div>
                     <h2 class="text-[56px]">98%</h2>
@@ -188,17 +226,23 @@
                 </div>
             </div>
 
-            <div class="py-37.5 text-center">
+            <div class="lg:py-37.5 py-22.5 text-center">
                 <h2>Start The Adventure Today And <span class="block">Become a Franchisee</span></h2>
-                <p class="leading-7.5 text-xl mt-5 mb-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p class="leading-7.5 text-xl mt-5 mb-15">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                    containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                    PageMaker including versions of Lorem Ipsum.</p>
                 <button class="btn block mx-auto">Become a Franchisee</button>
             </div>
         </div>
-      </section>
+    </section>
 
-      <!-- rating part -->
+    <!-- rating part -->
 
-      <section class="mb-37.5">
+    <section class="mb-37.5">
         <div class="container">
             <h2>What Our Clients Are Saying</h2>
 
@@ -218,7 +262,9 @@
                     </div>
                     <div class="mt-5">
                         <img src="/src//Assets/Group.png" alt="">
-                        <p class="text-lg font-medium mt-7.5">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+                        <p class="text-lg font-medium mt-7.5">There are many variatioof passages of Lorem Ipsum ava but
+                            the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't
+                            anything embarrassinhidden in believable.</p>
                     </div>
                 </div>
                 <div class="w-92.5  bg-[#191919] p-7.5 rounded-2xl">
@@ -236,7 +282,9 @@
                     </div>
                     <div class="mt-5">
                         <img src="/src//Assets/Group.png" alt="">
-                        <p class="text-lg font-medium mt-7.5">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+                        <p class="text-lg font-medium mt-7.5">There are many variatioof passages of Lorem Ipsum ava but
+                            the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't
+                            anything embarrassinhidden in believable.</p>
                     </div>
                 </div>
                 <div class="w-92.5  bg-[#191919] p-7.5 rounded-2xl">
@@ -254,7 +302,9 @@
                     </div>
                     <div class="mt-5">
                         <img src="/src//Assets/Group.png" alt="">
-                        <p class="text-lg font-medium mt-7.5">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+                        <p class="text-lg font-medium mt-7.5">There are many variatioof passages of Lorem Ipsum ava but
+                            the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't
+                            anything embarrassinhidden in believable.</p>
                     </div>
                 </div>
                 <div class="w-92.5  bg-[#191919] p-7.5 rounded-2xl">
@@ -272,7 +322,9 @@
                     </div>
                     <div class="mt-5">
                         <img src="/src//Assets/Group.png" alt="">
-                        <p class="text-lg font-medium mt-7.5">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+                        <p class="text-lg font-medium mt-7.5">There are many variatioof passages of Lorem Ipsum ava but
+                            the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't
+                            anything embarrassinhidden in believable.</p>
                     </div>
                 </div>
                 <div class="w-92.5  bg-[#191919] p-7.5 rounded-2xl">
@@ -290,7 +342,9 @@
                     </div>
                     <div class="mt-5">
                         <img src="/src//Assets/Group.png" alt="">
-                        <p class="text-lg font-medium mt-7.5">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+                        <p class="text-lg font-medium mt-7.5">There are many variatioof passages of Lorem Ipsum ava but
+                            the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't
+                            anything embarrassinhidden in believable.</p>
                     </div>
                 </div>
                 <div class="w-92.5  bg-[#191919] p-7.5 rounded-2xl">
@@ -308,85 +362,97 @@
                     </div>
                     <div class="mt-5">
                         <img src="/src//Assets/Group.png" alt="">
-                        <p class="text-lg font-medium mt-7.5">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+                        <p class="text-lg font-medium mt-7.5">There are many variatioof passages of Lorem Ipsum ava but
+                            the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't
+                            anything embarrassinhidden in believable.</p>
                     </div>
                 </div>
             </div>
         </div>
-      </section>
+    </section>
 
-      <!-- support part -->
-      <section class="bg-white text-black">
+    <!-- support part -->
+    <section class="bg-white text-black">
         <div class="container">
             <div class=" py-20 text-center">
                 <h2 class="text-[70px] font-bold leading-22.5 mb-12.5">For more Support</h2>
-                <input type="text" placeholder="Enter Email" class="pl-7.5 py-5 pr-100 border border-black placeholder-black font-bold text-lg rounded-[40px] mr-5" >
-                <button class="btn bg-black text-white">Subscribe</button>
+                <div class="lg:flex justify-center gap-5">
+                    <input type="text" placeholder="Enter Email"
+                        class="pl-7.5 py-5  lg:pr-100 border border-black placeholder-black font-bold text-lg rounded-[40px]">
+                    <button class="btn bg-black text-white mt-5 lg:mt-0">Subscribe</button>
+                </div>
             </div>
         </div>
-      </section>
+    </section>
 
-      <!-- find us -->
-       <section class="py-37.5">
-            <div class="container">
-                <div class="flex justify-between items-center">
-                    <div>
-                        <h2 class="text-start!">Our Restaurants. Where to Find Us?</h2>
-                        <p class="mt-4 mb-17.5 text-xl leading-7.5">Want to have a superb meal in an exceptional setting <span class="block">with family, friends or work colleagues, here are the</span> addresses of our restaurants.</p>
-                        <button class="btn"> Find The Nearest Cheffest</button>
-                    </div>
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.1580450020783!2d90.37993431119969!3d23.741742878587395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b7a55cd36f%3A0xfcc5b021faff43ea!2sCreative%20IT%20Institute!5e0!3m2!1sen!2sbd!4v1776830533581!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+    <!-- find us -->
+    <section class="lg:py-37.5 py-22.5">
+        <div class="container">
+            <div class="lg:flex justify-between items-center">
+                <div>
+                    <h2 class="text-start!">Our Restaurants. Where to Find Us?</h2>
+                    <p class="mt-4 mb-17.5 text-xl leading-7.5">Want to have a superb meal in an exceptional setting
+                        <span class="block">with family, friends or work colleagues, here are the</span> addresses of
+                        our restaurants.</p>
+                    <button class="btn"> Find The Nearest Cheffest</button>
+                </div>
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.1580450020783!2d90.37993431119969!3d23.741742878587395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b7a55cd36f%3A0xfcc5b021faff43ea!2sCreative%20IT%20Institute!5e0!3m2!1sen!2sbd!4v1776830533581!5m2!1sen!2sbd"
+                        class="lg:w-150 h-112.5 w-full mt-25 lg:mt-0"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-       </section>
+        </div>
+    </section>
 
-       <!-- footer part -->
-       <footer class="py-20 bg-[#191919]">
-            <div class="container">
-                <div class="flex justify-between">
-                    <div>
-                        <h3 class="text-2xl font-semibold">Our Products</h3>
-                        <ul class="text-lg mt-7.5">
-                            <li>Our menus</li>
-                            <li>Our burgers</li>
-                            <li>Our times sides</li>
-                            <li>Our naandwiches</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold">legal information</h3>
-                        <ul class="text-lg mt-7.5">
-                            <li>Legal Notice</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold">Contact us</h3>
-                        <ul class="text-lg mt-7.5">
-                            <li>Contacts</li>
-                            <li>Our addresses</li>
-                            <li>Become a Times Square franchisee</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold">We accept</h3>
-                        <div class="mt-7.5">
-                            <img src="/src/Assets/Frame (3).png" alt="">
-                        </div>
-                    </div>
-                  
+    <!-- footer part -->
+    <footer class="py-20 bg-[#191919]">
+        <div class="container">
+            <div class="lg:flex justify-between">
+                <div>
+                    <h3 class="text-2xl font-semibold">Our Products</h3>
+                    <ul class="text-lg mt-7.5">
+                        <li>Our menus</li>
+                        <li>Our burgers</li>
+                        <li>Our times sides</li>
+                        <li>Our naandwiches</li>
+                    </ul>
                 </div>
-                <div class="flex justify-between items-center pt-7  border-t border-[#4F4F4F] mt-25">
-                    <div class="flex gap-5">
-                        <img src="/src/Assets/Icon.png" alt="">
-                        <img src="/src/Assets/Icon (1).png" alt="">
-                        <img src="/src/Assets/Icon (2).png" alt="">
-                        <img src="/src/Assets/Icon (3).png" alt="">
-                    </div>
-                    <h3 class="text-lg">© 2024 Nayef All rights reserved.</h3>
+                <div>
+                    <h3 class="text-2xl font-semibold">legal information</h3>
+                    <ul class="text-lg mt-7.5">
+                        <li>Legal Notice</li>
+                    </ul>
                 </div>
+                <div>
+                    <h3 class="text-2xl font-semibold">Contact us</h3>
+                    <ul class="text-lg mt-7.5">
+                        <li>Contacts</li>
+                        <li>Our addresses</li>
+                        <li>Become a Times Square franchisee</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold">We accept</h3>
+                    <div class="mt-7.5">
+                        <img src="/src/Assets/Frame (3).png" alt="">
+                    </div>
+                </div>
+
             </div>
-       </footer>
+            <div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center pt-7  border-t border-[#4F4F4F] mt-25">
+                <div class="flex gap-5">
+                    <img src="/src/Assets/Icon.png" alt="">
+                    <img src="/src/Assets/Icon (1).png" alt="">
+                    <img src="/src/Assets/Icon (2).png" alt="">
+                    <img src="/src/Assets/Icon (3).png" alt="">
+                </div>
+                <h3 class="text-lg mt-7.5 lg:mt-0">© 2024 Nayef All rights reserved.</h3>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
